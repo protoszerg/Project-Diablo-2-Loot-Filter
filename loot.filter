@@ -1,0 +1,142 @@
+//FILTER LEVEL
+ItemDisplayFilterName[]: NORMAL LOOT
+ItemDisplayFilterName[]: HELL LOOT
+ItemDisplayFilterName[]: CRAFT
+ItemDisplayFilterName[]: RUNE WORD
+ItemDisplayFilterName[]: SHOW CODE
+
+//All ITEM SHOW DESCRIPT
+ItemDisplay[FILTLVL=5]: [%CODE%]%NAME%%CONTINUE%
+ItemDisplay[SOCKETS>0]: %NAME%[%SOCKETS%]%CONTINUE%
+ItemDisplay[SUP]: %NAME%[D:%ED%]%CONTINUE%
+
+ItemDisplay[NORM]: [N]%NAME%%CONTINUE% //Show Normal Item
+ItemDisplay[EXC]: [X]%NAME%%CONTINUE% //Show Except Item
+ItemDisplay[ELT]: [E]%NAME%%CONTINUE% //Show Elite Item
+
+ItemDisplay[ETH]: %NAME%[ETH]%CONTINUE% // Show Etheral Item
+
+
+//POTION
+
+ItemDisplay[hp1]:  %RED%HP1%CONTINUE% //hp1
+ItemDisplay[hp2]:  %RED%HP2%CONTINUE% //hp2
+ItemDisplay[hp3]:  %RED%HP3%CONTINUE% //hp3
+ItemDisplay[hp4]:  %RED%HP4%CONTINUE% //hp4
+ItemDisplay[hp5]:  %RED%HP5%CONTINUE% //hp5
+
+ItemDisplay[hp1 FILTLVL>1]: //HIDE
+ItemDisplay[hp2 FILTLVL>1]: //HIDE
+ItemDisplay[hp3 FILTLVL>1]: //HIDE
+
+ItemDisplay[mp1]: %BLUE%MP1%CONTINUE%
+ItemDisplay[mp2]: %BLUE%MP2%CONTINUE%
+ItemDisplay[mp3]: %BLUE%MP3%CONTINUE%
+ItemDisplay[mp4]: %BLUE%MP4%CONTINUE%
+ItemDisplay[mp5]: %BLUE%MP5%CONTINUE%
+
+ItemDisplay[mp1 FILTLVL>1]: //HIDE
+ItemDisplay[mp2 FILTLVL>1]: //HIDE
+ItemDisplay[mp3 FILTLVL>1]: //HIDE
+
+ItemDisplay[rvs]: %PURPLE%35%   //Reju potion 35%
+ItemDisplay[rvl]: %PURPLE%66%   //Reju potion 66%
+
+ItemDisplay[yps]: %GREEN%A%WHITE%nti	// Antidote
+ItemDisplay[vps]: %YELLOW%S%WHITE%tam	// Stamina
+ItemDisplay[wms]: %YELLOW%T%WHITE%haw	// Thawing
+
+ItemDisplay[tpfs]: %ORANGE%Oil[3] // Oil potion
+ItemDisplay[tpgs]: %GREEN%Gas[3] // Gas potion
+ItemDisplay[tpcs]: %BLUE%Freez[3] // Chill potion
+ItemDisplay[tpls]: %YELLOW%Shock[3] // Shock potion
+
+ItemDisplay[tpfm]: %ORANGE%Oil[6] // Rancid Gas potion
+ItemDisplay[tpgm]: %GREEN%Gas[6] // Rancid Gas potion
+ItemDisplay[tpcm]: %BLUE%Freez[6] // Rancid Gas potion
+ItemDisplay[tplm]: %YELLOW%Shock[6] // Shock potion
+
+ItemDisplay[tpfl]: %ORANGE%Oil[10]%CONTINUE% // Rancid Gas potion
+ItemDisplay[tpgl]: %GREEN%Gas[10]%CONTINUE% // Rancid Gas potion
+ItemDisplay[tpcl]: %BLUE%Freez[10]%CONTINUE% // Rancid Gas potion
+ItemDisplay[tpll]: %YELLOW%Shock[10]%CONTINUE% // Shock potion
+
+ItemDisplay[tpfl FILTLVL>1]:  // Rancid Gas potion
+ItemDisplay[tpgl FILTLVL>1]:  // Rancid Gas potion
+ItemDisplay[tpcl FILTLVL>1]:  // Rancid Gas potion
+ItemDisplay[tpll FILTLVL>1]:  // Shock potion
+
+//scroll
+ItemDisplay[isc]: %RED%!%WHITE%ID
+ItemDisplay[tsc]: %BLUE%!%WHITE%TP
+
+//GEM
+//Chipped GEM
+ItemDisplay[gcv]: %WHITE%[0]%YELLOW%Topaz // Chipped TOPAZ
+ItemDisplay[gcy]: %WHITE%[0]%PURPLE%Amethys // Chipped Amethyst
+ItemDisplay[gcb]: %WHITE%[0]%GREEN%Emerald // Chipped Emerald
+ItemDisplay[gcg]: %WHITE%[0]%GOLD%Diamond // Chipped Diamond
+ItemDisplay[gcr]: %WHITE%[0]%BLUE%Sapphere // Chipped Sapphere
+ItemDisplay[gcw]: %WHITE%[0]%RED%Ruby // Chipped Ruby
+ItemDisplay[skc]: %WHITE%[0]%LIGHT_GRAY%Skull // Chipped Ruby
+
+//FLAWED GEM
+ItemDisplay[gfy]: %WHITE%[2]%YELLOW%Topaz // FLAWED TOPAZ
+ItemDisplay[gfv]: %WHITE%[2]%PURPLE%Amethys // FLAWED Amethyst
+ItemDisplay[gfg]: %WHITE%[2]%GREEN%Emerald // FLAWED Emerald
+ItemDisplay[gfw]: %WHITE%[2]%GOLD%Diamond // FLAWED Diamond
+ItemDisplay[gfb]: %WHITE%[2]%BLUE%Sapphere // FLAWED Sapphere
+ItemDisplay[gfr]: %WHITE%[2]%RED%Ruby // FLAWED Ruby
+ItemDisplay[skf]: %WHITE%[2]%LIGHT_GRAY%Skull // FLAWED sKULL
+// GEM 3
+ItemDisplay[gsy]: %WHITE%[3]%YELLOW%Topaz //  TOPAZ
+ItemDisplay[gsv]: %WHITE%[3]%PURPLE%Amethys //  Amethyst
+ItemDisplay[gsg]: %WHITE%[3]%GREEN%Emerald //  Emerald
+ItemDisplay[gsw]: %WHITE%[3]%GOLD%Diamond //  Diamond
+ItemDisplay[gsb]: %WHITE%[3]%BLUE%Sapphere //  Sapphere
+ItemDisplay[gsr]: %WHITE%[3]%RED%Ruby //  Ruby
+ItemDisplay[sku]: %WHITE%[3]%LIGHT_GRAY%Skull //  sKULL
+
+//FLAWLESS GEM
+ItemDisplay[gzv OR gzvs]: %WHITE%[F]%PURPLE%Amethys%MAP-20% //  Amethyst
+ItemDisplay[glys OR gly]: %WHITE%[F]%YELLOW%Topaz%MAP-20% //  TOPAZ
+ItemDisplay[glb OR glbs]: %WHITE%[F]%BLUE%Sapphere%MAP-20% //  Sapphere
+ItemDisplay[glg OR glgs]: %WHITE%[F]%GREEN%Emerald%MAP-20% //  Emerald
+ItemDisplay[glr OR glrs]: %WHITE%[F]%RED%Ruby%MAP-20% //  Ruby
+ItemDisplay[glw OR glws]: %WHITE%[F]%GOLD%Diamond%MAP-20% //  Diamond
+ItemDisplay[skl OR skls]: %WHITE%[F]%LIGHT_GRAY%Skull%MAP-20% //  Skull
+
+//PERFECT GEM
+ItemDisplay[gpv OR gpvs]: %WHITE%[P]%PURPLE%Amethys%MAP-20% //  Amethyst
+ItemDisplay[gpy OR gpys]: %WHITE%[P]%YELLOW%Topaz%MAP-20% //  TOPAZ
+ItemDisplay[gpb OR gpbs]: %WHITE%[P]%BLUE%Sapphere%MAP-20% //  Sapphere
+ItemDisplay[gpg OR gpgs]: %WHITE%[P]%GREEN%Emerald%MAP-20% //  Emerald
+ItemDisplay[gpr OR gprs]: %WHITE%[P]%RED%Ruby%MAP-20% //  Ruby
+ItemDisplay[gpw OR gpws]: %WHITE%[P]%GOLD%Diamond%MAP-20% //  Diamond
+ItemDisplay[skz OR skzs]: %WHITE%[P]%LIGHT_GRAY%Skull%MAP-20% //  Skull
+
+//Charm
+ItemDisplay[!ID cm1]: %NAME%%MAP-94%
+ItemDisplay[!ID cm2]: %NAME%%MAP-94%
+ItemDisplay[!ID cm3]: %NAME%%MAP-94%
+
+//JEWEL
+ItemDisplay[jew]: %NAME%%MAP-20%
+
+//RUNE
+ItemDisplay[r01s OR r02s OR r03s OR r04s OR r05s OR r06s OR r07s OR r08s OR r09s OR r10s OR r11s OR r12s OR r13s OR r14s OR r15s OR r16s OR r17s OR r18s OR r19s OR r20s OR r21s OR r22s OR r23s OR r24s OR r25s OR r26s OR r27s OR r28s OR r29s OR r30s OR r31s OR r32s OR r33s OR r34s OR r35s]: %NAME%%MAP-68%
+ItemDisplay[r01 OR r02 OR r03 OR r04 OR r05 OR r06 OR r07 OR r08 OR r09 OR r10 OR r11 OR r12 OR r13 OR r14 OR r15 OR r16 OR r17 OR r18 OR r19 OR r20 OR r21 OR r22 OR r23 OR r24 OR r25 OR r26 OR r27 OR r28 OR r29 OR r30 OR r31 OR r32 OR r33 OR r34 OR r35]: %NAME%%MAP-68%
+
+//GOLD
+ItemDisplay[GOLD<1000 FILTLVL>1]:
+
+
+//Assasin weapon
+
+ItemDisplay[ktr MAG]: %NAME%%MAP-62%
+
+
+//hide
+ItemDisplay[(aqv OR cqv) (NMAG OR MAG)]: // HIDE Arrows Bolts Normal and Magic
+ItemDisplay[NORM NMAG (WEAPON OR ARMOR) !leg FILTLVL>1]: // Hide NORMAL ITEM NONMAGIC
+ItemDisplay[EXC NMAG (WEAPON OR ARMOR) FILTLVL>1]: // Hide EXCEPTION ITEM NONMAGIC
