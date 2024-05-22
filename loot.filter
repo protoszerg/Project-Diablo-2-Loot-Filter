@@ -28,6 +28,7 @@ ItemDisplay[hp5]:  %RED%HP5%CONTINUE% //hp5
 ItemDisplay[hp1 FILTLVL>1]: //HIDE
 ItemDisplay[hp2 FILTLVL>1]: //HIDE
 ItemDisplay[hp3 FILTLVL>1]: //HIDE
+ItemDisplay[hp4 FILTLVL>1]: //HIDE
 
 ItemDisplay[mp1]: %BLUE%MP1%CONTINUE%
 ItemDisplay[mp2]: %BLUE%MP2%CONTINUE%
@@ -38,6 +39,7 @@ ItemDisplay[mp5]: %BLUE%MP5%CONTINUE%
 ItemDisplay[mp1 FILTLVL>1]: //HIDE
 ItemDisplay[mp2 FILTLVL>1]: //HIDE
 ItemDisplay[mp3 FILTLVL>1]: //HIDE
+ItemDisplay[mp4 FILTLVL>1]: //HIDE
 
 ItemDisplay[rvs]: %PURPLE%35%   //Reju potion 35%
 ItemDisplay[rvl]: %PURPLE%66%   //Reju potion 66%
@@ -67,8 +69,11 @@ ItemDisplay[tpcl FILTLVL>1]:  // Rancid Gas potion
 ItemDisplay[tpll FILTLVL>1]:  // Shock potion
 
 //scroll
-ItemDisplay[isc]: %RED%!%WHITE%ID
-ItemDisplay[tsc]: %BLUE%!%WHITE%TP
+ItemDisplay[isc]: %RED%!%WHITE%ID%CONTINUE%  //ID Scroll
+ItemDisplay[tsc]: %BLUE%!%WHITE%TP%CONTINUE% // TP Scroll
+
+ItemDisplay[isc FILTLVL>1]:   //ID Scroll
+ItemDisplay[tsc FILTLVL>1]:  // TP Scroll
 
 //GEM
 //Chipped GEM
@@ -135,8 +140,15 @@ ItemDisplay[GOLD<1000 FILTLVL>1]:
 
 ItemDisplay[ktr MAG]: %NAME%%MAP-62%
 
+// notìy item
+
+ItemDisplay[!ID (SET OR UNI) (EXC OR ELT)]: %NAME%%MAP-20%%CONTINUE%
+
 
 //hide
 ItemDisplay[(aqv OR cqv) (NMAG OR MAG)]: // HIDE Arrows Bolts Normal and Magic
 ItemDisplay[NORM NMAG (WEAPON OR ARMOR) !leg FILTLVL>1]: // Hide NORMAL ITEM NONMAGIC
+ItemDisplay[NORM MAG (WEAPON OR ARMOR) !leg !ktr !CIRC !ETH FILTLVL>1]: // Hide NORMAL ITEM MAGIC
+
 ItemDisplay[EXC NMAG (WEAPON OR ARMOR) FILTLVL>1]: // Hide EXCEPTION ITEM NONMAGIC
+ItemDisplay[EXC MAG (WEAPON OR ARMOR) !ETH FILTLVL>1]: // Hide NORMAL ITEM MAGIC
