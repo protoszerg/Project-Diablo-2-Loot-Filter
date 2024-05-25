@@ -137,6 +137,40 @@ ItemDisplay[GOLD<1000 FILTLVL>1]:
 ItemDisplay[GOLD<5000 CLVL>80 FILTLVL>1]:
 
 
+//MAP
+
+ItemDisplay[t11]: [T2]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t12]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t13]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t14]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t15]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t16]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t21]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t22]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t23]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t24]: [T2]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t25]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t26]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t31]: [T2]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t32]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t33]: [T2]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t34]: [T2]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t35]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t36]: [T1]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t37]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t38]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t39]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t3a]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t41]: [T4]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t42]: [T4]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t43]: [T4]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t44]: [T4]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t51]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t52]: [T3]%NAME%%MAP-0B%%CONTINUE%
+ItemDisplay[t53]: [T2]%NAME%%MAP-0B%%CONTINUE%
+
+
+
 //Assasin weapon
 
 ItemDisplay[ktr MAG]: %NAME%%MAP-62%
@@ -148,12 +182,15 @@ ItemDisplay[!ID (SET OR UNI) (EXC OR ELT OR amu OR rin)]: %NAME%%MAP-20%%CONTINU
 ItemDisplay[wss]: %NAME%%MAP-62%  //WORLD STUNE SOULSTONE
 
 
+
+
+
 //hide
 ItemDisplay[(aqv OR cqv) (NMAG OR MAG)]: // HIDE Arrows Bolts Normal and Magic
-ItemDisplay[NORM NMAG (WEAPON OR ARMOR) !leg FILTLVL>1]: // Hide NORMAL ITEM NONMAGIC
+ItemDisplay[NORM NMAG (WEAPON OR ARMOR) !RW !leg FILTLVL>1]: // Hide NORMAL ITEM NONMAGIC
 ItemDisplay[NORM MAG (WEAPON OR ARMOR) !leg !SIN !CIRC !ETH FILTLVL>1]: // Hide NORMAL ITEM MAGIC
 
-ItemDisplay[EXC NMAG (WEAPON OR ARMOR) FILTLVL>1]: // Hide EXCEPTION ITEM NONMAGIC
-ItemDisplay[EXC MAG (WEAPON OR ARMOR) !ETH !SIN FILTLVL>1]: // Hide EXCEPTION ITEM MAGIC
+ItemDisplay[EXC NMAG (WEAPON OR ARMOR) !RW !leg FILTLVL>1]: // Hide EXCEPTION ITEM NONMAGIC
+ItemDisplay[EXC MAG (WEAPON OR ARMOR) !leg !SIN !CIRC !ETH FILTLVL>1]: // Hide EXCEPTION ITEM MAGIC
 
 ItemDisplay[ELT NMAG (WEAPON OR ARMOR) !SUP !ETH FILTLVL>1]: // Hide EXCEPTION ITEM NONMAGIC
